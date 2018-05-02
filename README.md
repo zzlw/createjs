@@ -1,5 +1,10 @@
 ## createjs 实现飘落动画
 
+[![GitHub issues](https://img.shields.io/github/issues/zzlw/createjs.svg)](https://github.com/zzlw/createjs/issues)
+[![GitHub forks](https://img.shields.io/github/forks/zzlw/createjs.svg)](https://github.com/zzlw/createjs/network)
+[![GitHub stars](https://img.shields.io/github/stars/zzlw/createjs.svg)](https://github.com/zzlw/createjs/stargazers)
+[![GitHub license](https://img.shields.io/github/license/zzlw/createjs.svg)](https://github.com/zzlw/createjs/blob/master/LICENSE)
+
 
 代码很长哈，主要是为了做对象复用，对象复用是一个防止内存溢出的很好办法（如果不停的new会导致对象回收不了而造成内存溢出），当雪花超过屏幕的时候被回收，当雪花要被生成时，对象池又有对象，那对象直接被拿出来，既被复用（其实还有更简单的办法，就是超过屏幕时，直接放回顶端，但是这样复用做的比较死，万一短时间被不会马上被用到就不行了，所以我还是用了比较麻烦的对象池）。
 
